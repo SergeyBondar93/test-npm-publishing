@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/SergeyBondar93/test-npm-publishing/compare/@test-npm-repo/test-independent-npm-package-v2.1.0...@test-npm-repo/test-independent-npm-package-v2.1.1) (2025-11-23)
+
+
+### Bug Fixes
+
+* fix wf ([3aecab1](https://github.com/SergeyBondar93/test-npm-publishing/commit/3aecab1188ab1a6c98122513892c179cf8c08b20))
+
 ## [2.1.0](https://github.com/SergeyBondar93/test-npm-publishing/compare/@test-npm-repo/test-independent-npm-package-v2.0.2...@test-npm-repo/test-independent-npm-package-v2.1.0) (2025-11-23)
 
 
