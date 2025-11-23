@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/SergeyBondar93/test-npm-publishing/compare/@test-npm-repo/test-independent-npm-package-v2.1.1...@test-npm-repo/test-independent-npm-package-v2.1.2) (2025-11-23)
+
+
+### Bug Fixes
+
+* fix fdshkj ([bccf7cf](https://github.com/SergeyBondar93/test-npm-publishing/commit/bccf7cf8417f7cc3c799aedbe2435d847e8a5ea9))
+
 ## [2.1.1](https://github.com/SergeyBondar93/test-npm-publishing/compare/@test-npm-repo/test-independent-npm-package-v2.1.0...@test-npm-repo/test-independent-npm-package-v2.1.1) (2025-11-23)
 
 
