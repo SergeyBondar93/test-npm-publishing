@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/SergeyBondar93/test-npm-publishing/compare/@test-npm-repo/test-independent-npm-package-v2.1.2...@test-npm-repo/test-independent-npm-package-v2.2.0) (2025-11-23)
+
+
+### Features
+
+* fdsfs ([d1e4265](https://github.com/SergeyBondar93/test-npm-publishing/commit/d1e42653242dc7706d7a4ed5bb869f80e138fe91))
+
 ## [2.1.2](https://github.com/SergeyBondar93/test-npm-publishing/compare/@test-npm-repo/test-independent-npm-package-v2.1.1...@test-npm-repo/test-independent-npm-package-v2.1.2) (2025-11-23)
 
 
