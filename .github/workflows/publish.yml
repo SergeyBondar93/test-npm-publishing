@@ -2,7 +2,7 @@ name: Publish npm-package
 
 on:
   workflow_run:
-    workflows: ["Release PR"]  # точное имя твоего workflow release-please
+    workflows: ["Release Please"]  # точное имя твоего workflow release-please
     types:
       - completed
 
