@@ -1,0 +1,14 @@
+{
+  "name": "@repo/a",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "prebuild": "node ../../scripts/clean.js",
+    "build": "npx esbuild src/index.ts --bundle --platform=node --format=esm --outfile=../../dist/a.js"
+  }
+}

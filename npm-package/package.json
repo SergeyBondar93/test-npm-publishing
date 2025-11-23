@@ -1,0 +1,21 @@
+{
+  "name": "@test-npm-repo/test-independent-npm-package",
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/npm-package-index.js",
+  "type": "module",
+  "exports": {
+    ".": "./dist/npm-package-index.js"
+  },
+  "scripts": {
+    "prebuild": "node ../scripts/clean.js",
+    "build": "npx esbuild src/index.ts --bundle --platform=node --format=esm --outfile=./dist/npm-package-index.js",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

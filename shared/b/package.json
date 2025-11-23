@@ -1,0 +1,11 @@
+{
+  "name": "@repo/b",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/B.ts",
+  "type": "module",
+    "scripts": {
+    "prebuild": "node ../../scripts/clean.js",
+    "build": "npx esbuild src/B.ts --bundle --platform=node --format=esm --outfile=../../dist/b.js"
+  }
+}

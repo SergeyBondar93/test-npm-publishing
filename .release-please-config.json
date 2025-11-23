@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "npm-package": {
+      "path": "npm-package",
+      "release-type": "node",
+      "component": "@test-npm-repo/test-independent-npm-package"
+    }
+  }
+}

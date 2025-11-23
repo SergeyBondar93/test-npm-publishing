@@ -1,0 +1,11 @@
+{
+  "name": "@repo/c",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "prebuild": "node ../../scripts/clean.js",
+    "build": "npx esbuild src/C.ts --bundle --platform=node --format=esm --outfile=../../dist/c.js"
+  }
+}
