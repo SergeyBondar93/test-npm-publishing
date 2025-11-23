@@ -3,7 +3,7 @@ name: Publish npm-package
 on:
   push:
     tags:
-      - '*'
+      - "*"
   workflow_dispatch:
 
 permissions:
@@ -36,5 +36,4 @@ jobs:
         working-directory: ./npm-package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm publish --access public
+        run: npm publish --access public
