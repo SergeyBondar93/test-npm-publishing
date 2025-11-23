@@ -12,14 +12,7 @@ permissions:
 
 jobs:
   publish:
-    # Run only when the Release Please workflow finished successfully
-    # and the head commit message looks like a release commit (contains "release").
-    # This avoids publishing when non-release merges trigger the Release Please workflow.
-    # Run when Release Please workflow succeeded AND the head commit message
-    # contains the release-please commit prefix `chore(main): release`.
-    # Merge commits prepend a "Merge pull request ..." line, so we must search
-    # the whole message rather than only the first line.
-    if: ${{ github.event.workflow_run.conclusion == 'success' && contains(github.event.workflow_run.head_commit.message, 'chore(main): release') }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
