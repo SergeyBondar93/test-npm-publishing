@@ -1,35 +1,36 @@
 name: Publish npm-package
 
 on:
-  push:
-    tags:
-      - "*"
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Release PR"]  # точное имя твоего workflow release-please
+    types:
+      - completed
 
 permissions:
   contents: read
-  id-token: write
+  packages: write
 
 jobs:
   publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Use Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build all
+      - name: Build all packages
         run: npm run build
 
       - name: Publish npm-package
