@@ -1,6 +1,6 @@
 {
   "name": "@test-npm-repo/test-independent-npm-package",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "private": false,
   "main": "dist/npm-package-index.js",
   "type": "module",
